@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <style>
+        body {
+            background: url('/images/addback.jpg') no-repeat center center/cover;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add a New Property</h1>
+    <form action="/properties/add" method="POST">
+        <input type="text" name="title" placeholder="Property Title" required>
+        <input type="text" name="location" placeholder="Location" required>
+        <input type="number" name="price" placeholder="Price (in USD)" required>
+        <textarea name="description" placeholder="Property Description" required></textarea>
+        <button type="submit">Add Property</button>
+    </form>
+    
+    <br>
+    <a href="/dashboard" class="button">Back to Dashboard</a>
+</body>
+</html>

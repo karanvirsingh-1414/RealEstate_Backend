@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Properties</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<style>
+    body {
+        background: url('/images/addback.jpg') no-repeat center center/cover;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+</style>
+<body>
+    <h1>Available Properties</h1>
+    <div class="property-list">
+        <% if (properties.length > 0) { %>
+            <% properties.forEach(property => { %>
+                <div class="property-card">
+                    <h2><%= property.title %></h2>
+                    <p><strong>Location:</strong> <%= property.location %></p>
+                    <p><strong>Price:</strong> $<%= property.price %></p>
+                    <p><%= property.description %></p>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No properties available.</p>
+        <% } %>
+    </div>
+    <br>
+    <a href="/dashboard" class="button">Back to Dashboard</a>
+
+</body>
+</html>

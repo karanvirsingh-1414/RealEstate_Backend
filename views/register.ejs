@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <style>
+         body {
+    background: url('/images/login.jpg') no-repeat center center/cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    </style>
+    
+    
+    <!-- Agar error hai toh usko show karo -->
+   
+    
+    <div class="register-container">
+        <h1>Register</h1>
+        <% if (error) { %>
+            <p style="color: red; font-weight: bold; text-align: center; margin-bottom: 15px;">
+                <%= error %>
+            </p>
+        <% } %>
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html>

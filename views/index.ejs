@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* General Page Styling */
+        body {
+    background: url('/images/back.jpg') no-repeat center center/cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+        .dashboard-container {
+            text-align: center;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        /* Enlarged Description Box */
+        .description {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ddd;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            max-width: 900px;
+            margin: 0 auto 25px auto;
+            text-align: justify;
+            margin-top: 10%;
+        }
+
+        /* Cards Container */
+        .cards-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+
+        /* Individual Cards */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin-top: 4%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 174, 255, 0.5);
+        }
+
+        .card h2 {
+            color: #fff;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #bbb;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Buttons */
+        .card a {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #000;
+            background: #00aaff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .card a:hover {
+            background: #0088cc;
+            transform: scale(1.05);
+        }
+
+        /* Logout Button */
+        .card.logout a {
+            background: #ff4444;
+        }
+
+        .card.logout a:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1>Welcome, <%= username %>!</h1>
+
+        <div class="description">
+            <p>
+                Our real estate platform provides a seamless way to **manage, list, and browse properties** with ease. Whether you're a homeowner looking to sell, a landlord renting out apartments, or a business listing commercial spaces, our platform simplifies the process. You can **add properties** by specifying key details such as **location, price, size, and features**. Once added, these listings are stored securely and can be accessed anytime via the **View Properties** section.
+                <br><br>
+                Our intuitive dashboard ensures you stay in control, making **property management efficient and hassle-free**. Searching for a new home or commercial space? Browse through **verified listings**, compare options, and find properties that match your requirements effortlessly. With a **modern interface, fast navigation, and powerful filtering**, our platform is designed for convenience.
+                <br><br>
+                Whether you're a first-time user or an experienced real estate professional, we provide a **smooth and secure experience**. Start adding properties today and **take charge of your real estate listings** with just a few clicks!
+            </p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <h2>Add Property</h2>
+                <p>List a new property for sale or rent.</p>
+                <a href="/properties/add">➕ Add</a>
+            </div>
+            
+            <div class="card">
+                <h2>View Properties</h2>
+                <p>Browse available properties.</p>
+                <a href="/properties/view">👀 View</a>
+            </div>
+
+            <div class="card logout">
+                <h2>Logout</h2>
+                <p>End your session and log out.</p>
+                <a href="/logout">🚪 Logout</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "Hotel Taj",
+        "location": "India, Mumbai",
+        "price": "250,000",
+        "size": "2500",
+        "image": "/images/taj.jpg",
+        "link": "https://www.tajhotels.com/en-in/hotels"
+      },
+      {
+        "id": 2,
+        "title": "Hotel Aroma",
+        "location": "India, Chandigarh",
+        "price": "250,000",
+        "size": "2500",
+        "image": "/images/Aroma.jpg",
+        "link": "https://hotelaroma.com"
+      },
+      {
+        "id": 3,
+        "title": "The Oberoi Sukhvilas",
+        "location": "India, Punjab",
+        "price": "250,000",
+        "size": "2500",
+        "image": "/images/oberoi.jpg",
+        "link": "https://www.oberoihotels.com/hotels-in-chandigarh-sukhvilas-resort/rooms-villas/"
+      },
+      {
+        "id": 4,
+        "title": "Jai Mahal Palace",
+        "location": "India, Jaipur",
+        "price": "250,000",
+        "size": "2500",
+        "image": "/images/jai.jpg",
+        "link": "https://www.tajhotels.com/en-in/hotels/jai-mahal-palace-jaipur"
+      }
+  ]
+  
