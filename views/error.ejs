@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error</title>
+  <link rel="stylesheet" href="/css/error.css">
+  <script
+    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+    type="module"
+  ></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1a1a1a, #2c3e50);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: #ccc;
+    }
+    .fullscreen-error {
+      text-align: center;
+    }
+    .fullscreen-error p {
+      font-size: 1.4rem;
+      margin-top: 20px;
+    }
+    .fullscreen-error a {
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #fff;
+      background: #ff4b2b;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .fullscreen-error a:hover {
+      background: #e84322;
+    }
+  </style>
+</head>
+<body>
+  <div class="fullscreen-error">
+    <dotlottie-player
+      src="https://lottie.host/a69cb1c2-a8c2-41d1-b536-104e0ae56677/ksWMA3vgEQ.lottie"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay
+    ></dotlottie-player>
+
+    <p>Unauthorized access attempt detected. Kindly log in to access this page.</p>
+    <a href="/">Return Home</a>
+  </div>
+</body>
+</html>

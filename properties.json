@@ -34,5 +34,17 @@
     "size": "2500",
     "image": "/images/jai.jpg",
     "link": "https://www.tajhotels.com/en-in/hotels/jai-mahal-palace-jaipur"
+  },
+  {
+    "title": "Jw Marriot",
+    "location": "India",
+    "price": "100000",
+    "description": "A big hotel"
+  },
+  {
+    "title": "Golden Sands",
+    "location": "Dubai",
+    "price": "100000",
+    "description": "big hotel"
   }
 ]

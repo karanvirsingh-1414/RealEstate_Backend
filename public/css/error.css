@@ -1,0 +1,65 @@
+/* Error and 404 full page styles */
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.fullscreen-error {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle at top left, #1f1c2c, #2c3e50, #000000);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.fullscreen-error dotlottie-player {
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(255, 75, 43, 0.8));
+}
+
+.fullscreen-error p {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: #bbbbbb;
+    max-width: 600px;
+}
+
+.fullscreen-error a {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 12px 28px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff4b2b80;
+    transition: all 0.3s ease;
+}
+
+.fullscreen-error a:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    box-shadow: 0 0 20px #ff4b2bcc;
+    transform: scale(1.05);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.85; }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

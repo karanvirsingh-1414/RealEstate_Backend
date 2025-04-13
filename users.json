@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "username": "karan",
+    "password": "$2b$10$qoan/OzNOkI45BznAbTkZOJWPwTUUCy4/IHKkjgnIG7l52jNR5yd2"
+  },
+  {
+    "username": "Karanvir Singh",
+    "password": "$2b$10$RRQzf6clBrbnFFhfowvKq.sf78uqyj9sqHdRvmTRHAYPM5pSoTz9S"
+  },
+  {
+    "username": "Khushal",
+    "password": "$2b$10$cDlTgOJCu6IaXzglUuxML.F2KcjdY9YbRp0i7Sbo4yTiUPXnLZKLu"
+  }
+]
